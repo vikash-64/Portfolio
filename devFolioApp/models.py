@@ -8,3 +8,6 @@ class Project(models.Model):
     description = models.CharField(max_length=200 , blank=True , null=True)
     ImgLink = models.URLField(max_length = 500 , blank=True , null=True)
     ProjectLink = models.URLField(max_length = 500 , blank=True , null=True)
+    
+class StaticThings(models.Model):
+    CVLink = models.URLField(max_length = 500 , blank=True , null=True)
