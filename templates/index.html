@@ -38,7 +38,9 @@
             <div class="container px-4 px-lg-5 text-center">
                 <!-- <h1 class="mb-1">Stylish Portfolio</h1>
                 <h3 class="mb-5"><em>A Free Bootstrap Theme by Start Bootstrap</em></h3> -->
-                <a class="btn btn-primary btn-xl" href="shorturl.at/blrBM">DOWNLOAD CV</a>
+                {% for mything in myt %}
+                <a class="btn btn-primary btn-xl" href="{{mything.CVLink}}" download>DOWNLOAD CV</a>
+                {% endfor %}
             </div>
 <!--             <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
                 
